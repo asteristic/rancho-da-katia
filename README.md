@@ -53,7 +53,7 @@ You will also see any lint errors in the console.
 
 # :bug: Issues
 
-Feel free to **file a new issue** with a respective title and description on the [Portfolio](https://github.com/asteristic/rancho-da-katia/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/asteristic/rancho-da-katia/blob/master/CONTRIBUTING.md) to find out about the coding standards.
+Feel free to **file a new issue** with a respective title and description on the [Rancho Da Katia](https://github.com/asteristic/rancho-da-katia/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/asteristic/rancho-da-katia/blob/master/CONTRIBUTING.md) to find out about the coding standards.
 
 # :tada: Contributing
 
