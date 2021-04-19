@@ -1,0 +1,94 @@
+import styled, {css} from 'styled-components';
+
+interface ContainerProps {
+  isOpen: boolean;
+}
+
+export const Container = styled.header<ContainerProps>`
+  height: 95px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 45px
+  }
+
+  nav {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: -110vh;
+    ${props => props.isOpen && css`
+      top: 0;
+    `}
+    left: 0;
+
+    transition: top 1s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 500;
+    list-style: none;
+    text-transform: uppercase;
+
+    li {
+      & + li {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  svg {
+    position: relative;
+    z-index: 5;
+    font-size: 36px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: 768px) {
+    nav {
+      height: initial;
+      width: initial;
+      position: initial;
+
+      ul {
+        color: #333;
+        display: flex;
+        flex-direction: row;
+
+        li {
+          & + li {
+            margin-top: 0;
+            margin-left: 4rem;
+          }
+        }
+      }
+    }
+
+    svg {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 20px;
+  }
+`;
