@@ -16,13 +16,17 @@ export const Container = styled.header<ContainerProps>`
   align-items: center;
 
   img {
-    height: 45px
+    height: 45px;
+    position: relative;
+    z-index: 5;
   }
 
   nav {
     height: 100vh;
     width: 100%;
+    background: #fff;
     position: absolute;
+    z-index: 1;
     top: -110vh;
     ${props => props.isOpen && css`
       top: 0;

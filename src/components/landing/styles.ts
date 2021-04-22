@@ -15,26 +15,24 @@ export const Container = styled.div`
 
     h6 {
       font-family: 'Great Vibes', cursive;
-      font-size: 96px;
+      font-size: 6rem;
       text-align: center;
     }
 
     div {
       height: 2px;
-      width: 600px;
-      background: #fff;
+      width: calc(100% - 40px);
+      background: var(--white);
     }
 
     h1 {
       margin-top: 20px;
       text-align: center;
-      font-size: 48px;
+      font-size: 3rem;
       font-weight: 700;
       text-transform: uppercase;
     }
   }
-
- 
 
   display: flex;
   flex-direction: column;
@@ -48,4 +46,14 @@ export const Container = styled.div`
     position: absolute;
     bottom: -14px;
   }
+
+  @media (min-width: 576px) {
+    span {
+
+      div {
+        width: 37rem;
+      }
+    }
+  }
+
 `;

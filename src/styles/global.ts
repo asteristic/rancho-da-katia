@@ -8,6 +8,36 @@ export default createGlobalStyle`
   }
 
   :root {
+    --white: #fff;
+
+    --gray-001: #FDFDFD;
+    --gray-200: #99A1A1;
+    --gray-300: #8B8B8B;
+    --gray-900: #333;
+
+    --red: #F14E4E;
+  }
+
+  html {
+    font-size: 75%;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    html {
+      font-size: 100%;
+    }
   }
 
   body {

@@ -16,18 +16,10 @@ export default function Header() {
 
       <nav>
         <ul>
-          <li>
-            HOME
-          </li>
-          <li>
-            MENU
-          </li>
-          <li>
-            LOCATION
-          </li>
-          <li>
-            CONTACT
-          </li>
+          <li>HOME</li>
+          <li>MENU</li>
+          <li>LOCATION</li>
+          <li>CONTACT</li>
         </ul>
       </nav>
 
