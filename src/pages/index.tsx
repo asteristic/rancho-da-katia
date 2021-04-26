@@ -4,6 +4,7 @@ import Header from '../components/header';
 import Landing from '../components/landing';
 import OurMenu from '../components/menu';
 import SimpleTitle from '../components/simpleTitle';
+import OurStory from '../components/story';
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <SimpleTitle title="Menu" subTitle="Dishes" />
       <OurMenu />
       <SimpleTitle title="Our History" subTitle="Find Out More" />
-
+      <OurStory />
     </>
   )
 }
