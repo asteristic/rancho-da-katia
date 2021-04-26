@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Contact from '../components/contact';
 
 import Header from '../components/header';
 import Landing from '../components/landing';
@@ -16,8 +17,9 @@ export default function Home() {
       <Landing />
       <SimpleTitle title="Menu" subTitle="Dishes" />
       <OurMenu />
-      <SimpleTitle title="Our History" subTitle="Find Out More" />
+      <SimpleTitle title="Our Story" subTitle="Find Out More" />
       <OurStory />
+      <Contact />
     </>
   )
 }
