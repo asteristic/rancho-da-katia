@@ -1,6 +1,6 @@
 import { Container } from './styles';
 
-export function Footer() {
+export default function Footer() {
   return (
     <Container>
       <h1>Rancho da Katia</h1>
@@ -8,7 +8,7 @@ export function Footer() {
       <h2>
         2021 © Designed and Developed By 
         <a href="https://portfolio-marcosvaldeni.vercel.app/" target="_blank" rel="noreferrer"> 
-          Marcos Valdeni Lucas
+          &nbsp;Marcos Valdeni Lucas
         </a>
       </h2>
     </Container>

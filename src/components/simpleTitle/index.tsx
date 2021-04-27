@@ -1,11 +1,11 @@
 import { Container } from './styles';
 
-interface titles {
+interface Titles {
   title: string,
   subTitle: string
 }
 
-export default function SimpleTitle({ title, subTitle }:titles) {
+export default function SimpleTitle({ title, subTitle }:Titles) {
   return (
     <Container>
 

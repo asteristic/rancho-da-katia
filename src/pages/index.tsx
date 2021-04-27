@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import Contact from '../components/contact';
-import { Footer } from '../components/footer';
 
 import Header from '../components/header';
 import Landing from '../components/landing';
 import OurMenu from '../components/menu';
 import SimpleTitle from '../components/simpleTitle';
 import OurStory from '../components/story';
+import Contact from '../components/contact';
+import Footer from '../components/footer';
 
 export default function Home() {
   return (
