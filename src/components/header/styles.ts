@@ -75,9 +75,15 @@ export const Container = styled.header<ContainerProps>`
         flex-direction: row;
 
         li {
+          cursor: pointer;
+          text-decoration: none;
           & + li {
             margin-top: 0;
             margin-left: 4rem;
+          }
+          a {
+            text-decoration: none;
+            color: #333;
           }
         }
       }

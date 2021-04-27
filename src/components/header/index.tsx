@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from "next/link";
 
 import { Container } from './styles';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -16,8 +17,16 @@ export default function Header() {
 
       <nav>
         <ul>
-          <li>HOME</li>
-          <li>MENU</li>
+          <li>
+            <Link href="/">
+              HOME
+            </Link>
+          </li>
+          <li>
+            <Link href="/menu">
+              MENU
+            </Link>
+          </li>
           <li>LOCATION</li>
           <li>CONTACT</li>
         </ul>
