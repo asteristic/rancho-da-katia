@@ -17,15 +17,16 @@ export const Container = styled.section`
 
     p {
       margin: 3.125rem 0;
+      text-align: center;
       font-size: 1.25rem;
       font-weight: 700;
       color: white;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
     }
 
     h1 {
       margin-bottom: 2rem;
-      font-size: 2.625rem;
+      font-size: 2rem;
       font-weight: 700;
       color: var(--gray-200);
     }
@@ -61,6 +62,17 @@ export const Container = styled.section`
         & + li {
           margin-left: 2rem;
         }
+      }
+    }
+
+    @media (min-width: 420px) {
+
+      h1 {
+        font-size: 2.625rem;
+      }
+
+      p {
+        letter-spacing: 2px;
       }
     }
 
