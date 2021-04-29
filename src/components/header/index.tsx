@@ -9,7 +9,6 @@ export default function Header() {
 
   const toggleHandler = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   }
   return (
     <Container isOpen={isOpen}>
@@ -27,7 +26,11 @@ export default function Header() {
               MENU
             </Link>
           </li>
-          <li>LOCATION</li>
+          <li>
+            <Link href="/location">
+              LOCATION
+            </Link>
+          </li>
           <li>CONTACT</li>
         </ul>
       </nav>

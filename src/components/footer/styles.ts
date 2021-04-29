@@ -19,10 +19,12 @@ export const Container = styled.section`
   }
 
   p {
+    width: 25rem;
     margin: 3.125rem 0;
   }
 
   h2 {
+    width: 18rem;
     margin-bottom: 4.5rem;
     font-size: 1rem;
   }
@@ -32,5 +34,15 @@ export const Container = styled.section`
     font-weight: 600;
     color: var(--gray-200);
     text-decoration: none;
+  }
+
+  @media (min-width: 576px) {
+    p {
+      width: initial;
+    }
+
+    h2 {
+      width: initial;
+    }
   }
 `;

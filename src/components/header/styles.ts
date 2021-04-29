@@ -54,6 +54,11 @@ export const Container = styled.header<ContainerProps>`
         margin-top: 4rem;
       }
     }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
   }
 
   svg {
@@ -80,10 +85,6 @@ export const Container = styled.header<ContainerProps>`
           & + li {
             margin-top: 0;
             margin-left: 4rem;
-          }
-          a {
-            text-decoration: none;
-            color: #333;
           }
         }
       }
