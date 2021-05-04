@@ -57,13 +57,16 @@ export const Container = styled.article<ContainerProps>`
     padding: 0;
     background: initial;
 
+
     div {
+      flex: 1;
       height: 300px;
       width: 100%;
       border-radius: 10px 0 0 10px;
     }
 
     main {
+      flex: 1;
       padding: 10px 10px 10px 2rem;
       background: var(--gray-001);
       border-radius: 0 10px 10px 0;

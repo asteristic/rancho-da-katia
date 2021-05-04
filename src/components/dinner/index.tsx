@@ -2,25 +2,32 @@ import MenuComponent from '../menuComponent';
 
 import { Container } from "./styles";
 
-export default function Dinner() {
+interface Dishe {
+  uid: string,
+  name: string,
+  photo: string,
+  ingredients: string,
+  description: string,
+  valor: string,
+  disheNumber: number,
+}
+
+interface DishesProps {
+  dishes: Dishe[] 
+}
+
+export default function Dinner({ dishes }: DishesProps) {
   return (
     <Container>
-      <MenuComponent 
-        id="42" 
-        title="Prawn With Cream"
-        photo="menu/menu-09.jpg"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci 
-        fuga consequuntur labore maiores. Aperiam vero adipisci quod 
-        repellendus."  
-      />
-      <MenuComponent 
-        id="37" 
-        title="Steamed Prawn"
-        photo="menu/menu-10.jpg"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci 
-        fuga consequuntur labore maiores. Aperiam vero adipisci quod 
-        repellendus."  
-      />
+      {dishes.map(dishe => (
+        <MenuComponent 
+          key={dishe.uid}
+          id={String(dishe.disheNumber)} 
+          title={dishe.name}
+          photo={dishe.photo}
+          description={dishe.description}
+        />
+      ))}
     </Container>
   );
 }

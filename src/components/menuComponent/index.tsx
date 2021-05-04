@@ -10,7 +10,9 @@ interface MenuItem {
 export default function MenuCompotent({ id, title, photo, description }:MenuItem) {
   return (
     <Container photo={photo}>
-      <div></div>
+      <div>
+        {/* <img src={photo} alt={title} /> */}
+      </div>
       <main>
         <h2>{title}</h2>
 
