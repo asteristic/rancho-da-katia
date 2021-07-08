@@ -1,12 +1,27 @@
 import Head from 'next/head';
 
+import Header from '../components/header';
+import Landing from '../components/landing';
+import OurMenu from '../components/menu';
+import SimpleTitle from '../components/simpleTitle';
+import OurStory from '../components/story';
+import Contact from '../components/contact';
+import Footer from '../components/footer';
+
 export default function Home() {
   return (
     <>
       <Head>
         <title>Rancho Da Katia</title>
       </Head>
-      <h1>Rancho Da Katia</h1>
+      <Header />
+      <Landing />
+      <SimpleTitle title="Menu" subTitle="Dishes" />
+      <OurMenu />
+      <SimpleTitle title="Our Story" subTitle="Find Out More" />
+      <OurStory />
+      <Contact />
+      <Footer />
     </>
   )
 }
